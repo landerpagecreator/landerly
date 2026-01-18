@@ -1,6 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+
+
+
   <meta name="google-site-verification" content="xtCJ5L94NRlTNVxFu8fwxXpmhFuVQs2hVfh2jcStOQ0" />
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -48,182 +48,22 @@
 </script>
 
   <style>
-    /* Privacy Policy Modal Styles */
-    .privacy-modal {
-      display: none;
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.7);
-      z-index: 1000;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .privacy-modal.active {
-      display: flex;
-    }
-
-    .modal-content {
-      background: white;
-      padding: 30px;
-      border-radius: 16px;
-      max-width: 800px;
-      max-height: 80vh;
-      overflow-y: auto;
-      margin: 20px;
-      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
-    }
-
-    .modal-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 24px;
-      padding-bottom: 16px;
-      border-bottom: 1px solid #e0e0e0;
-    }
-
-    .modal-header h2 {
-      font-size: 1.8rem;
-      color: #1f1f1f;
-    }
-
-    .close-modal {
-      background: none;
-      border: none;
-      font-size: 28px;
-      cursor: pointer;
-      color: #5f6368;
-      line-height: 1;
-      padding: 0;
-      width: 30px;
-      height: 30px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .close-modal:hover {
-      color: #1f1f1f;
-    }
-
-    .modal-body {
-      color: #333;
-      line-height: 1.7;
-    }
-
-    .modal-body h3 {
-      margin: 24px 0 12px 0;
-      color: #1f1f1f;
-      font-size: 1.3rem;
-    }
-
-    .modal-body p {
-      margin-bottom: 16px;
-    }
-
-    .modal-body ul {
-      margin: 16px 0;
-      padding-left: 20px;
-    }
-
-    .modal-body li {
-      margin-bottom: 8px;
-    }
-
-    .modal-actions {
-      display: flex;
-      gap: 16px;
-      margin-top: 32px;
-      padding-top: 24px;
-      border-top: 1px solid #e0e0e0;
-    }
-
-    .btn {
-      padding: 12px 24px;
-      border-radius: 8px;
-      font-weight: 500;
-      cursor: pointer;
-      border: none;
-      font-size: 1rem;
-      transition: all 0.2s ease;
-    }
-
-    .btn-accept {
-      background: #1a73e8;
-      color: white;
-      flex: 1;
-    }
-
-    .btn-accept:hover {
-      background: #0d62d9;
-      transform: translateY(-1px);
-      box-shadow: 0 4px 12px rgba(26, 115, 232, 0.2);
-    }
-
-    .btn-read {
-      background: #f1f3f4;
-      color: #5f6368;
-    }
-
-    .btn-read:hover {
-      background: #e8eaed;
-      color: #1f1f1f;
-    }
-
-    .privacy-link {
-      color: #1a73e8;
-      text-decoration: none;
-      cursor: pointer;
-      font-weight: 500;
-    }
-
-    .privacy-link:hover {
-      text-decoration: underline;
-    }
-
-    .privacy-footer {
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      background: #f8f9fa;
-      padding: 16px 20px;
-      border-top: 1px solid #e0e0e0;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      z-index: 100;
-    }
-
-    .privacy-footer.hidden {
-      display: none;
-    }
-
-    .footer-text {
-      color: #5f6368;
-      font-size: 0.9rem;
-    }
-
     .busy-banner {
-      background-color: #fff3cd;
-      color: #664d03;
-      border-bottom: 1px solid #ffecb5;
-      padding: 12px 16px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-      font-weight: 600;
-      font-size: 0.95rem;
-    }
+  background-color: #fff3cd;
+  color: #664d03;
+  border-bottom: 1px solid #ffecb5;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
 
-    .busy-icon {
-      font-size: 18px;
-    }
+.busy-icon {
+  font-size: 18px;
+}
 
     :root {
       --bg: #ffffff;
@@ -245,7 +85,6 @@
       background: var(--bg);
       color: var(--text);
       line-height: 1.6;
-      padding-bottom: 80px; /* Space for privacy footer */
     }
 
     header {
@@ -350,98 +189,15 @@
 </head>
 <body>
 
-  <!-- Privacy Policy Modal -->
-  <div id="privacyModal" class="privacy-modal">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h2>Privacy Policy & Terms of Service</h2>
-        <button class="close-modal" onclick="closePrivacyModal()">&times;</button>
-      </div>
-      <div class="modal-body">
-        <h3>Payment Terms</h3>
-        <p><strong>Important:</strong> All services require payment upfront before work begins. This ensures commitment from both parties and allows me to allocate time and resources to your project.</p>
-        
-        <h3>Payment Methods</h3>
-        <p>Accepted payment methods include:</p>
-        <ul>
-          <li>PayPal</li>
-          <li>Venmo</li>
-          <li>Cash App</li>
-          <li>Bank transfer (US only)</li>
-          <li>Other agreed-upon methods</li>
-        </ul>
-        
-        <h3>Service Delivery Process</h3>
-        <ol>
-          <li>You contact me with your project requirements</li>
-          <li>I provide a final quote based on your needs</li>
-          <li>You make the payment in full</li>
-          <li>I begin development immediately</li>
-          <li>You receive the completed files within the agreed timeline</li>
-          <li>Optional hosting setup if purchased</li>
-        </ol>
-        
-        <h3>Refund Policy</h3>
-        <p>Due to the custom nature of the work, refunds are only offered if:</p>
-        <ul>
-          <li>I am unable to start the work for any reason</li>
-          <li>The delivered work does not match the agreed specifications</li>
-          <li>No refunds for change of mind after work has begun</li>
-        </ul>
-        
-        <h3>Data Collection</h3>
-        <p>I collect minimal information necessary to complete your project:</p>
-        <ul>
-          <li>Contact information (email, name)</li>
-          <li>Project requirements and content</li>
-          <li>Payment information (processed securely through third-party providers)</li>
-          <li>No sensitive data is stored on my servers</li>
-        </ul>
-        
-        <h3>Project Ownership</h3>
-        <p>Once payment is completed and work delivered:</p>
-        <ul>
-          <li>You own the complete code and design</li>
-          <li>You can modify, resell, or use it as you wish</li>
-          <li>I retain no rights to your finished website</li>
-        </ul>
-        
-        <h3>Communication</h3>
-        <p>All communication is done via email at <strong>anasjccoding@email.com</strong>. No phone calls or video meetings unless specifically agreed upon (may incur additional charges).</p>
-        
-        <h3>Timeline</h3>
-        <p>Typical delivery: 1-3 business days after payment confirmation. Complex projects may take longer (will be communicated upfront).</p>
-        
-        <h3>Revisions</h3>
-        <p>The base price includes 1 revision. Additional revisions are charged at $5 per revision.</p>
-        
-        <h3>Hosting & Domain</h3>
-        <p>Hosting and domain setup are optional add-ons. I can help you purchase and configure these, but ongoing hosting fees are your responsibility.</p>
-      </div>
-      <div class="modal-actions">
-        <button class="btn btn-read" onclick="scrollToTop()">Read Full Policy</button>
-        <button class="btn btn-accept" onclick="acceptPrivacyPolicy()">I Accept & Agree</button>
-      </div>
-    </div>
-  </div>
+  <body>
 
-  <!-- Privacy Footer Banner -->
-  <div id="privacyFooter" class="privacy-footer">
-    <div class="footer-text">
-      This website uses essential cookies. By continuing to use this site, you agree to our 
-      <a href="#" class="privacy-link" onclick="openPrivacyModal()">Privacy Policy</a> 
-      and payment terms.
-    </div>
-    <button class="btn btn-accept" onclick="acceptPrivacyPolicy()">I Accept</button>
-  </div>
-
-  <!-- Main Content -->
   <div class="busy-banner">
     <span class="busy-icon">⚠️</span>
     <span class="busy-text">BUSY — We are dealing with a customer cant recive requests
       at the moment. This banner will be removed once we are available again.
     </span>
   </div>
+
 
   <header>
     <h1>High-impact landing pages. Fast. Affordable.</h1>
@@ -490,6 +246,7 @@
   </section>
 
   <section>
+    <section>
     <h2>Pricing</h2>
     <p class="section-desc">
       Clear, honest pricing. Start small, upgrade only if you need more.
@@ -605,69 +362,14 @@
     <div class="card" style="margin-top:24px">
       <p><strong>Email:</strong> anasjccoding@email.com</p>
       <p><strong>Base price:</strong> $10 per landing page</p>
-      <p><strong>Payment:</strong> Required upfront before work begins</p>
     </div>
   </section>
 
   <footer>
-    © <span>Anas</span> — Websites built to convert
-    <!-- © 2026 Anas – License required for use -->
-.
+    © <span>Anas</span> — Websites built to convert.
   </footer>
 
-  <script>
-    // Privacy Policy Functions
-    function openPrivacyModal() {
-      document.getElementById('privacyModal').classList.add('active');
-      document.body.style.overflow = 'hidden';
-    }
-
-    function closePrivacyModal() {
-      document.getElementById('privacyModal').classList.remove('active');
-      document.body.style.overflow = 'auto';
-    }
-
-    function acceptPrivacyPolicy() {
-      // Hide the privacy footer
-      document.getElementById('privacyFooter').classList.add('hidden');
-      // Close modal if open
-      closePrivacyModal();
-      // Set a cookie or localStorage to remember acceptance
-      localStorage.setItem('privacyAccepted', 'true');
-      // Optional: You can add analytics tracking here
-      console.log('Privacy policy accepted');
-    }
-
-    function scrollToTop() {
-      document.querySelector('.modal-content').scrollTop = 0;
-    }
-
-    // Check if user already accepted privacy policy
-    window.addEventListener('DOMContentLoaded', function() {
-      if (localStorage.getItem('privacyAccepted') === 'true') {
-        document.getElementById('privacyFooter').classList.add('hidden');
-      }
-      
-      // Add click event to all privacy links
-      document.querySelectorAll('.privacy-link').forEach(link => {
-        link.addEventListener('click', openPrivacyModal);
-      });
-    });
-
-    // Close modal when clicking outside
-    document.getElementById('privacyModal').addEventListener('click', function(e) {
-      if (e.target === this) {
-        closePrivacyModal();
-      }
-    });
-
-    // Close modal with Escape key
-    document.addEventListener('keydown', function(e) {
-      if (e.key === 'Escape' && document.getElementById('privacyModal').classList.contains('active')) {
-        closePrivacyModal();
-      }
-    });
-  </script>
 </body>
 </html>
+
 
